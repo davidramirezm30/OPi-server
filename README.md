@@ -18,7 +18,7 @@ This tutorial is to install Apache, Mysql, Php, Git and Symfony in the Orange Pi
     $ GRANT ALL PRIVILEGES ON *.* TO 'phpmyadminuser'@'localhost' WITH GRANT OPTION;
 
 ## PHP
-    $ sudo apt-get install php libapache2-mod-php libapache2-mod-perl2 php php-cli php-common php-curl php-dev php-gd php-imap php-ldap php-mysql php-odbc php-pear php-zip php-xml phpmyadmin php-mbstring php-gettext
+    $ sudo apt-get install php libapache2-mod-php libapache2-mod-perl2 php php-cli php-common php-curl php-dev php-gd php-imap php-ldap php-mysql php-odbc php-pear php-zip php-xml phpmyadmin php-mbstring php-gettext -y
     
     $ sudo phpenmod mbstring
     $ sudo systemctl restart apache2
