@@ -44,3 +44,10 @@ Download de Symfony app in /var/www/ and changing the current name of the folder
     $ php bin/console avanzu:admin:initialize
     
     $ chmod -R 777 *
+
+    $ composer update
+If you get the error message proc_open(): fork failed - Cannot allocate memory try this:
+
+    $ /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+    $ /sbin/mkswap /var/swap.1
+    $ /sbin/swapon /var/swap.1
